@@ -1,0 +1,103 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: hsla(212, 89%, 42%, 0.822);
+	font-family: 'Lato', sans-serif;
+}
+
+.contenedor{
+
+	width: 90%;
+	max-width: 1000px;
+	padding: 40px 20px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+
+.tarjeta{
+	width: 100%;
+	max-width: 550px;
+	color: #fff;
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.tarjeta > div{
+	padding: 30px;
+	border-radius: 15px;
+	min-height: 315px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3);
+}
+
+.tarjeta .delantera {
+	width: 100%;
+	background: url(../img/bg-tarjeta/bg-tarjeta-03.jpg);
+	background-size: cover;
+}
+
+.delantera .logo-escuela {
+	text-align: center;
+	min-height: 50px;
+}
+
+.delantera .logo-escuela img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 80px;
+}
+
+.delantera .logo-escuela{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.delantera .label{
+	font-size: 16px;
+	color: #0c0c0c;
+	margin-bottom: 5px ;
+}
+
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion{
+	color: rgb(252, 134, 0);
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.delantera .flexbox{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.trasera .qr{
+	text-align: center;
+	min-height: 50px;
+}
+
+.trasera .qr img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 80px;
+}

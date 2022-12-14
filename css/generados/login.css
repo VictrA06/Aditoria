@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7/10/2016, 11:33:37 AM
+    Author     : Cesar
+*/
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.panel-default {
+  width: 400px;
+  height: 680px;
+}
+
+.panel-default2 {
+  width: 800px;
+  height: 680px;
+}
+
+.panel-default3 {
+  width: 120px;
+  height: 680px;
+}

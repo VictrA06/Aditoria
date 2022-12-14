@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 4px;
+    outline: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-image: url('');
+    background-size: cover;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+textarea {
+    width: 57%;
+    height: 25px;
+    margin-top: 50px;
+    padding: 10px 1%;
+    font-size: 18px;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    display: inline-block;
+    background: #19115c;
+    padding: 5px 15px;
+    color: #fff;
+    border: 0 none;
+    margin-top: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 90px;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    opacity: 1;
+}
+
+.mainlg input[type="text"],
+.mainlg input[type="password"] {
+    text-align: center;
+    border-color: rgba(73, 73, 73, 0.308);
+    border: 2;
+    width: 480px;
+    height: 35px;
+    margin-left: -15px;
+    border-radius: 50px;
+    padding: 5px;
+
+}
+
+.mainlg input[type="submit"] {
+    width: 99%;
+    margin: 15px auto;
+    padding: 13px 0;
+}
+
+input[type="submit"] {
+
+    margin-top: 10px;
+
+}
+
+.mainlg {
+    width: 30%;
+    background-color: rgba(255, 255, 255, .4);
+    text-align: center;
+    border-radius: 5px;
+    margin: 1% 650px 0 650px;
+    padding: 3%;
+    position: relative;
+}
+
+.error {
+    background-color: #E74F4F;
+    position: absolute;
+    top: 0;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.titulolg {
+    text-align: center;
+}
