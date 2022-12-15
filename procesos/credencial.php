@@ -4,9 +4,9 @@ $id = $_REQUEST['id'];
 
 require_once ('../vendor/autoload.php');
 
-include('qr.php');
-
 include('fotocredencial.php');
+
+include('qr.php');
 
 require_once ('credeforma.php');
 

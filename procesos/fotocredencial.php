@@ -116,8 +116,8 @@
         <script type="text/javascript">
             function configure(){
                 Webcam.set({
-                    width:480,
-                    height:360,
+                    width:378,
+                    height:380,
                     image_format: 'jpeg',
                     jpeg_quality:90
                 });

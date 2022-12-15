@@ -31,12 +31,12 @@
             $level = "M";
             $frameSize = 3;
     
-            echo $row['nocuenta'] ;
+            
     
             $contenido = $row['nocuenta'] ;
             QRcode :: png($contenido, $filename,$level,$tamanio,$frameSize);
 
-            echo '<img src="'.$filename.'"/>';
+            
         
         }else{
     
@@ -46,14 +46,11 @@
     
             $tamanio = 7;
             $level = "M";
-            $frameSize = 3;
-    
-            echo $nocuenta ;
+            $frameSize = 3;         
     
             $contenido = $nocuenta ;
             QRcode :: png($contenido, $filename,$level,$tamanio,$frameSize);
 
-            echo '<img src="'.$filename.'"/>';
 
         }
     }
