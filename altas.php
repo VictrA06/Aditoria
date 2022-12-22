@@ -200,7 +200,7 @@
                           </div>
                           <div class="form-group">
                             <label for=""">Correo</label>
-                            <input type="email" class="form-control" name="correo" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="El correo debe tener el dominio de la institucion"/>
+                            <input type="email" class="form-control" name="correo" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="El correo debe tener el dominio de la institucion"/>                          
                         </div>
                                 <div class="form-group">
                                     <label for="itt_password">Contraseña</label>
@@ -220,7 +220,7 @@
                                 </div>
                                 <input type="file" name="foto" class="form__file" required />
                                 <div class="form-group">
-                                  <input type="submit" class="btn btn-primary pull-left"/>
+                                    <input type="submit" class="btn btn-primary pull-left"/>
                                 </div>
                             </form>
                         </div>

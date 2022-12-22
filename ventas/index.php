@@ -10,13 +10,13 @@
                 <div class="panel-heading">
                     <h3>
                         <strong>
-                            <i class="glyphicon glyphicon-shopping-cart"></i> Registro de ventas
+                             Registro de Pagos
                         </strong>
                     </h3>
                 </div>
                 <div class="panel-body">
                     <button class="btn btn-primary" id="new-sale">
-                        <i class="glyphicon glyphicon-plus"></i> Nueva venta
+                        <i class="glyphicon glyphicon-plus"></i> Nuevo Pagos
                     </button>
                     <br><br>
                     <table class="table table-condensed table-bordered table-striped table-hover" id="table-sale">
@@ -24,7 +24,7 @@
                             <tr>
                                 <th>Fecha y hora</th>
                                 <th>Periodo</th>
-                                <th>Numero Venta</th>
+                                <th>Numero de Pago</th>
                                 <th>No. Cuenta</th>
                                 <th>Nombre</th>
                                 <th>Total</th>

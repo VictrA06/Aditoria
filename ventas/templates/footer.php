@@ -6,7 +6,7 @@
 	    	<div class="modal-content">
 	      		<div class="modal-header">
 	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        	<h4 class="modal-title" id="myModalLabel">Registro/Edicion de venta</h4>
+	        	<h4 class="modal-title" id="myModalLabel">Registro/Edicion de Pagos</h4>
 	      	</div>
 	      	<div class="modal-body">
 	      		<form id="sale-data">
@@ -124,7 +124,7 @@
                         Instituto Tecnológico de Toluca -
                         Algunos derechos reservados © 2013 <br><br>
 
-                        <center><img   class="img-responsive " alt="Responsive image" src="banners/footer.png" title="footer"></center>
+                        <center><img   class="img-responsive " alt="Responsive image" src="../banners/footer.png" title="footer"></center>
                     </p>
                     <br>
                     <p>

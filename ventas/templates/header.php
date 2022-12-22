@@ -17,12 +17,12 @@
         <link href="css/lib/font-awesome.min.css" rel="stylesheet">
 
         <!-- CSS Custom Files -->
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="../css/index.css">
         
         <title>Instituto Tecnológico de Toluca</title>
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/bootstrapXP.1657320049.css"rel="stylesheet">
-        <link rel="stylesheet" href="css/tecnm.1645744063.css" media="screen" rel="stylesheet">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/bootstrapXP.1657320049.css"rel="stylesheet">
+        <link rel="stylesheet" href="../css/tecnm.1645744063.css" media="screen" rel="stylesheet">
         <link rel="shortcut icon" href="/favicon.ico?v=1642175403"/>
         <link rel="icon" type="image/png" href="/favicon-16.1642175694.png" sizes="16x16"/>
         <link rel="icon" type="image/png" href="/favicon-32.1642175700.png" sizes="32x32"/>
@@ -56,10 +56,10 @@
         <link type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,500,600,700" rel="stylesheet"/>
         <link type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="lazy/jquery.lazy.min.1639604795.js"></script>
+        <script type="text/javascript" src="../lazy/jquery.lazy.min.1639604795.js"></script>
         <script type="text/javascript" src="//kit.fontawesome.com/feeb80352d.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="bgRotator/bgRotator.1639604788.js"></script>
-        <script type="text/javascript" src="js/init_banner.1639680509.js"></script>
+        <script type="text/javascript" src="../bgRotator/bgRotator.1639604788.js"></script>
+        <script type="text/javascript" src="../js/init_banner.1639680509.js"></script>
             
         <script>
         var lang = $('html').attr('lang');
@@ -84,7 +84,7 @@
 
 
 <div class="container" align="center">
-    <img src="banners/header.png" class="img-responsive" alt="Responsive image">  
+    <img src="../banners/header.png" class="img-responsive" alt="Responsive image">  
 </div>
     <link rel="stylesheet" href="<?=BASE_URL?>resources/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=BASE_URL?>resources/bootstrap/css/bootstrap-theme.min.css">
@@ -99,9 +99,6 @@
             z-index: 9999 !important;
         }
 
-        .ui-autocomplete li{
-            font-size: 12px;
-        }
 
         .table-form{
             width: 100%;
