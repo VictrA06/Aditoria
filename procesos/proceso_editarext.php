@@ -19,7 +19,7 @@
     $resultado = $conexion ->query($query);
 
     if ($resultado){
-        echo "<script>alert('Usuario Modificado!'); window.location='mostrarext.php'</script>";
+        echo "<script>alert('Acividad Modificada!'); window.location='mostrarext.php'</script>";
     }else{
         printf("Errormessage: %s\n", mysqli_error($conexion));
     }

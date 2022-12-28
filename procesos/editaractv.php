@@ -107,7 +107,7 @@
                 </div>
             </nav>
              <div class="container">
-             <h1>Agregar una nueva actividad</h1>
+             <h1>Editar actividad</h1>
                 <form action="../procesos/procesoeditaractv.php" class="col-6" method="post" enctype="multipart/form-data">
                     <label>Clave de la Actividad</label>
                     <input type="text" class="form-control" name="clave" required value="<?php echo $row['id_actv'];?>" pattern="[0-9]{8,8}" maxlength="8" title="La clave debe ser de 8 digitos">

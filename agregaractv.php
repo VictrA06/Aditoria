@@ -132,7 +132,7 @@
                                     <td><?php echo $row['nombre_actv'];?></td>
                                     <td>$ <?php echo $row['precio'];?></td>
                                     <th><a href="procesos/editaractv.php?id= <?php echo $row['id_actv'];?>"><img src="icos/edit.png" alt="Editar" width="20px" height="20px"></a></th>
-                                    <th><a href="procesos/proceso_eliminar.php?id=<?php echo $row['id_actv'];?>"><img src="icos/borrar.png" alt="Eliminar" width="20px" height="20px"></a></th>
+                                    <th><a href="procesos/eliminaractv.php?id=<?php echo $row['id_actv'];?>"><img src="icos/borrar.png" alt="Eliminar" width="20px" height="20px"></a></th>
                                 </tr>
                             <?php
                                 }
