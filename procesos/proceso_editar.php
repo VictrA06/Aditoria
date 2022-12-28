@@ -19,6 +19,11 @@
 
     $resultado = $conexion ->query($query);
 
+    $query = "UPDATE tbl_entidad SET  entidad_razon_social='$nombre $apellido_pat $apellido_mat', entidad_direccion='$correo' WHERE entidad_id = '$id'";
+
+    $resultado = $conexion ->query($query);
+
+
     if ($resultado){
         echo "<script>alert('Usuario Modificado!'); window.location='../mostrar.php'</script>";
     }else{

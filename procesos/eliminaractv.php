@@ -2,8 +2,9 @@
     include ("../conexion.php");
     $id = $_REQUEST['id'];
     $query = "DELETE FROM actividades WHERE id_actv = '$id'";
+    $resultado = $conexion ->query($query);
 
-    $query = "DELETE FROM tbl_producto WHERE id_actv = '$id'";
+    $query = "DELETE FROM tbl_producto WHERE producto_id = '$id'";
 
     $resultado = $conexion ->query($query);
 
