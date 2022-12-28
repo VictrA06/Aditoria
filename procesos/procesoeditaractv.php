@@ -12,6 +12,10 @@
     
     $resultado = $conexion ->query($query);
 
+    $query = "UPDATE tbl_producto SET producto_descripcion='$nombreactv',producto_precio ='$precio' WHERE producto_id = '$id'";
+    
+    $resultado = $conexion ->query($query);
+
     if ($resultado){
         echo "<script>alert('Actividad Modificada!'); window.location='../agregaractv.php'</script>";
     }else{

@@ -3,6 +3,8 @@
     $id = $_REQUEST['id'];
     $query = "DELETE FROM actividades WHERE id_actv = '$id'";
 
+    $query = "DELETE FROM tbl_producto WHERE id_actv = '$id'";
+
     $resultado = $conexion ->query($query);
 
     if ($resultado) {

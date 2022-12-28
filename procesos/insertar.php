@@ -18,7 +18,7 @@
 
     $resultado = $conexion ->query($query);
 
-    $query = "INSERT INTO tbl_entidad(entidad_ruc_dni, entidad_razon_social, entidad_direccion,entidad_estado) VALUES ('$nocuenta','$nombre $apellido_pat $apellido_mat','$correo','0')";
+    $query = "INSERT INTO tbl_entidad(entidad_id, entidad_razon_social, entidad_direccion,entidad_estado) VALUES ('$nocuenta','$nombre $apellido_pat $apellido_mat','$correo','0')";
 
     $resultado = $conexion ->query($query);
 
