@@ -63,7 +63,7 @@
                             <th>Descripcion</th>
                             <th width="100px" style="display:none;">Unidad</th>
                             <th width="100px">Precio</th>
-                            <th width="100px">Cantidad</th>
+                            
                             <th width="100px">Subtotal</th>
                             <th width="80px">Opcion</th>
                         </tr>
@@ -78,9 +78,7 @@
                         	<td>
                         		<input type="number" step="any" class="form-control input-sm" placeholder="Escribe..." name="product-price" onkeyup="calculate_detail();" value="0.00" required>
                         	</td>
-                        	<td>
-                        		<input type="number" step="any" class="form-control input-sm" placeholder="Escribe..." name="product-amount" onkeyup="calculate_detail();" value="1.00" required>
-                        	</td>
+                        	
                         	<td>
                         		<input type="number" step="any" class="form-control input-sm" name="product-subtotal" value="0.00" readonly>
                         	</td>
@@ -109,7 +107,7 @@
 	       	 		<i class="glyphicon glyphicon-arrow-left"></i> Volver
 	       	 	</button>
 	        	<button type="button" class="btn btn-success" id="btn-save-sale" onClick="save_sale();">
-	        		<i class="glyphicon glyphicon-floppy-save"></i> Guardar venta
+	        		<i class="glyphicon glyphicon-floppy-save"></i> Guardar Pago
 	        	</button>
 	      	</div>
 	    </div>
