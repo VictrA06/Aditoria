@@ -132,7 +132,7 @@ function calculate_detail(){
 
 var detail_deleted = new Array();
 function save_sale(){
-	var question = confirm('¿Desea guardar esta venta?');
+	var question = confirm('¿Desea guardar este pago?');
 	if(question == true){
 		var form = $('#sale-data').serialize();
 		var product_saved = new Array();
@@ -172,7 +172,7 @@ function save_sale(){
 					detail_deleted = new Array();
 					$('#modal-sale').modal('hide');
 				}else{
-					alert('Error al guardar la venta.');
+					alert('Error al guardar la pago.');
 					return false;
 				}
 			}
@@ -211,7 +211,7 @@ function edit_sale(id){
 }
 
 function delete_sale(id){
-	var question = confirm('¿Desea eliminar esta venta?');
+	var question = confirm('¿Desea eliminar este pago?');
 	if(question == true){
 		$.ajax({
 			type: 'POST',
@@ -221,7 +221,7 @@ function delete_sale(id){
 				if(response > 0){
 					$('#reg-'+id).remove();
 				}else{
-					alert('Error al eliminar esta venta.');
+					alert('Error al eliminar este pago.');
 				}
 			}
 		});
@@ -230,6 +230,6 @@ function delete_sale(id){
 	}
 }
 
-function print_sale(id){
-	window.open(base_url+'ajax/print.php?action=print_sale&id='+id, 'Impresion de venta', 'width=600, height=600');
-}
+/*function print_sale(id){
+	window.open(base_url+'ajax/print.php?action=print_sale&id='+id, 'Impresion de Pago', 'width=600, height=600');
+}*/

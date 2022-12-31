@@ -185,7 +185,7 @@
       }
 
       public function get_lastsale(){
-        $serie = 'F001';
+        $serie = '2022-2023';
         $number = 0;
         $sql = $this->db->query("SELECT v.venta_numero FROM tbl_venta AS v WHERE v.venta_serie = '$serie' ORDER BY v.venta_numero DESC LIMIT 1");
         foreach ($sql as $key){

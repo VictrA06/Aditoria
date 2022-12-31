@@ -21,7 +21,7 @@
 		       				</td>
 		       				<td>
 		       					<div class="input-group">
-								  	<span class="input-group-addon">Perioda</span>
+								  	<span class="input-group-addon">Periodo</span>
 								  	<input type="text" class="form-control input-sm" maxlength="4" placeholder="Escribe..." value="2022-2023" name="sale-serie" readonly>
 								</div>	
 		       				</td>
