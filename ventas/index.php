@@ -3,7 +3,22 @@
     include_once('classes/sales.php'); 
     $sales = new Sales;
 ?>
+
     <div class="row">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+
+                    <!-- Brand and toggle get grouped for better display -->
+    
+                    
+                  <ul class="superior-menu">
+                    <a class="navbar-brand" href="../login/indexad.php">Inicio</a>  
+                </ul>
+
+
+                </div>
+                </div>
+            </nav>
         <br>
         <div class="col-md-12">
             <div class="panel panel-primary">

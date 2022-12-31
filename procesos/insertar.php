@@ -23,9 +23,9 @@
     $resultado = $conexion ->query($query);
 
     if ($resultado){
-        echo "<script>alert('Bienvenido! solicita tu pago en ventanilla para continuar con el tramite'); window.location='../ventas/index.php'</script>";
+        echo "<script>alert('Bienvenido! solicita tu pago en ventanilla para continuar con el tramite'); window.location='../index.html'</script>";
     }else{
-        echo "<script>alert('No.Cuenta incorrecto o existe alguien con ese numero de cuenta'); window.location='altas.php'</script>";
+        echo "<script>alert('No.Cuenta incorrecto o existe alguien con ese numero de cuenta'); window.location='../altas.php'</script>";
     }
 
    
