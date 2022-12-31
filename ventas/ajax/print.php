@@ -11,12 +11,15 @@
 				$pdf->setPrintHeader(false);
 				$pdf->setPrintFooter(false);
 				$pdf->AddPage();
+				$pdf->SetCreator('Rodrigo Avalos');
+				$pdf->SetAuthor('Rodrigo Avalos');
 				$pdf->SetAutoPageBreak(true, 5);
 				$pdf->SetXY(5, 5);
 				$id = $_GET['id'];
 				$sale_date = ''; 
 				$sale_serie = '';
 				$sale_number = '';
+				$entity_ruc_dni = '';
 				$entity_social_name = '';
 				$entity_address = '';
 				$header = $sales->header_sale($id);
@@ -24,6 +27,7 @@
 					$sale_date = date('d/m/Y H:i:s', strtotime($key['venta_fecha_hora']));
 					$sale_serie = $key['venta_serie'];
 					$sale_number = $key['venta_numero'];
+					$entity_ruc_dni = $key['entidad_ruc_dni'];
 					$entity_social_name = $key['entidad_razon_social'];
 					$entity_address = $key['entidad_direccion'];	
 				}
@@ -32,7 +36,9 @@
 				$total = 0;
 				foreach ($detail as $key){
 					$d_description = $key['producto_descripcion'];
-					$d_price = $key['detalle_precio'];  
+					$d_unit = $key['producto_unidad']; 
+					$d_price = $key['detalle_precio']; 
+					$d_amount = $key['detalle_cantidad']; 
 					$d_subtotal = $d_price*$d_amount;
 					$total += $d_subtotal;
 					$sale_detail .= '<tr>
@@ -54,6 +60,7 @@
 							</tr>
 							<tr>
 								<td width="90px"><strong>Telefono: </strong></td>
+								<td width="232px">'.$entity_ruc_dni.'</td>
 								<td width="240px" rowspan="4" align="center" style="font-size:72px; border-left:1px solid black;">
 									<br><br>
 									<strong>'.$sale_serie.'-'.$sale_number.'</strong>
@@ -83,8 +90,8 @@
 				         </table>';
 
 		      	$pdf->writeHTML($html, true, false, true, true, 'L');
-		      	$pdf->IncludeJS('print();');
-		      	$pdf->Output('Sale.pdf', 'D');
+		      	//$pdf->IncludeJS('print();');
+		      	$pdf->Output('Sale.pdf', 'I');
 			break;
 		}
 	}

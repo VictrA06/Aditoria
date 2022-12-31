@@ -10,7 +10,7 @@
 
     $resultado = $conexion ->query($query);
 
-    $query = "INSERT INTO tbl_producto(producto_descripcion, producto_id ,producto_precio,producto_estado) VALUES ('$nombreactv','$noactv','$precio','1')";
+    $query = "INSERT INTO tbl_producto(producto_descripcion,producto_unidad, producto_precio,producto_estado) VALUES ('$nombreactv','Und','$precio','1')";
 
     $resultado = $conexion ->query($query);
 

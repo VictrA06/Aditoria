@@ -77,7 +77,6 @@
             </style> 
 
         <link rel="icon" href="img/ITTLogo.png">
-        <title>Usuarios Internos</title>
     </head>
     <body>
         
@@ -99,6 +98,9 @@
             z-index: 9999 !important;
         }
 
+        .ui-autocomplete li{
+            font-size: 12px;
+        }
 
         .table-form{
             width: 100%;

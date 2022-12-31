@@ -21,13 +21,13 @@
 		       				</td>
 		       				<td>
 		       					<div class="input-group">
-								  	<span class="input-group-addon">Serie</span>
-								  	<input type="text" class="form-control input-sm" maxlength="4" placeholder="Escribe..." value="F001" name="sale-serie" readonly>
+								  	<span class="input-group-addon">Perioda</span>
+								  	<input type="text" class="form-control input-sm" maxlength="4" placeholder="Escribe..." value="2022-2023" name="sale-serie" readonly>
 								</div>	
 		       				</td>
 		       				<td>
 		       					<div class="input-group">
-								  	<span class="input-group-addon">Numero</span>
+								  	<span class="input-group-addon"># Pago</span>
 								  	<input type="text" class="form-control input-sm" maxlength="8" placeholder="Escribe..." name="sale-number" readonly>
 								</div>
 		       				</td>
@@ -36,7 +36,7 @@
 		       				<td>
 		       					<input type="text" class="hidden" name="entity-id" value="0">
 		       					<div class="input-group">
-								  	<span class="input-group-addon">No. Cuenta</span>
+								  	<span class="input-group-addon">No.Cuenta</span>
 								  	<input type="text" class="form-control input-sm" name="entity-ruc-dni" maxlength="11" placeholder="Escribe...">
 								</div>
 		       				</td>
@@ -60,10 +60,10 @@
                     <form id="form-detail-sale">
                     <thead>
                         <tr>
-                            <th>Descripcion</th>
+                            <th>Actividad</th>
                             <th width="100px" style="display:none;">Unidad</th>
                             <th width="100px">Precio</th>
-                            
+                            <th width="100px">Cantidad</th>
                             <th width="100px">Subtotal</th>
                             <th width="80px">Opcion</th>
                         </tr>
@@ -78,7 +78,9 @@
                         	<td>
                         		<input type="number" step="any" class="form-control input-sm" placeholder="Escribe..." name="product-price" onkeyup="calculate_detail();" value="0.00" required>
                         	</td>
-                        	
+                        	<td>
+                        		<input type="number" step="any" class="form-control input-sm" placeholder="Escribe..." name="product-amount" onkeyup="calculate_detail();" value="1.00" required>
+                        	</td>
                         	<td>
                         		<input type="number" step="any" class="form-control input-sm" name="product-subtotal" value="0.00" readonly>
                         	</td>
