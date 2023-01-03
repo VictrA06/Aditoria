@@ -1,7 +1,6 @@
 <?php 
  session_start();
  $correo = $_SESSION['correo'];
-
  if (isset($_SESSION['correo'])) {
 ?>
 
