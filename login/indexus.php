@@ -116,21 +116,12 @@
                     <a class="navbar-brand" href="../attendance2.php">Reporte de Asistencias</a>
                     <a class="navbar-brand" href="../repagos.php">Reporte de Pagos</a>
                     <a class="navbar-brand" href="salir.php">Cerrar Sesión</a>
-
-                    <a><?php $correo?></a>
+                    
+                    <a><?php$correo?></a>
                 </ul>
 
 
                 </div>
-
-                    <!-- Nav links and other content for toggling -->
-                    <!--<div class="collapse navbar-collapse" id="itt-collapsable-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
-                                <a href="/">Iniciar Sesión</a>
-                            </li>
-                        </ul>
-                    </div>-->
                 </div>
             </nav>
 

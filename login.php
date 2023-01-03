@@ -111,20 +111,8 @@
 
 
                 </div>
-
-                    <!-- Nav links and other content for toggling -->
-                    <!--<div class="collapse navbar-collapse" id="itt-collapsable-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
-                                <a href="/">Iniciar Sesión</a>
-                            </li>
-                        </ul>
-                    </div>-->
                 </div>
             </nav>
-
-            
-
 
             <!-- Main page content -->
             <div class="row">

@@ -20,7 +20,7 @@
             header("Location:indexad.php?id=$id");
         
         }else{
-            
+            $id=$_POST['nocuenta'];
             $_SESSION['correo'] = $correo;
             header("Location:indexus.php?id=$id");
         }

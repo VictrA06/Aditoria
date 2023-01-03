@@ -1,5 +1,7 @@
 <?php session_start();
-$_GET['id'];?>
+$correo = $_SESSION['correo'];
+if (isset($_SESSION['correo'])) {
+?>
 <html>
     <head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -117,30 +119,10 @@ $_GET['id'];?>
                       
                       <ul class="superior-menu">
                         <a class="navbar-brand">Reporte de Asistencias</a>  
-                             <!-- <li class="dropdown">
-                                  <div class="clearFix">
-                                  <span title="Estudiantes" class="floatLeft" style="cursor:default">
-                                      Registrar
-                                  </span>
-                                  <div class="menucollapse floatRight"><i class="fas fa-caret-down"></i></div>		</div>
-                                  <ul class="submenu white-bg">
-                                          <li><a href="registro.html" target="_blank">Registro</a></li>
-                                          <li><a href="formulario.html" target="_blank">Usuario Externo</a></li>
-                                      </ul>
-                              </li> -->
+                        <a><?php $correo?></a>
                      </ul>
 
-
                     </div>
-
-                    <!-- Nav links and other content for toggling -->
-                    <!--<div class="collapse navbar-collapse" id="itt-collapsable-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
-                                <a href="/">Iniciar Sesión</a>
-                            </li>
-                        </ul>
-                    </div>-->
                 </div>
             </nav>
 
@@ -180,8 +162,8 @@ $_GET['id'];?>
 			   <table id="example1" class="table table-bordered">
                     <thead>
                         <tr>
-						<td>No.Venta</td>
-						<td>Servicio</td>
+						          <td>No.Venta</td>
+						            <td>Servicio</td>
                         <td>Cantidad</td>
                         <td>Fecha</td>
                         </tr>
@@ -193,28 +175,26 @@ $_GET['id'];?>
                         $password="";
                         $dbname="bd_alberca";
 
-                        
-                    
                         $conn = new mysqli($server,$username,$password,$dbname);
-						$date = date('Y-m-d');
+						            $date = date('Y-m-d');
                         if($conn->connect_error){
                             die("Connection failed" .$conn->connect_error);
                         }
-                           $id = $_REQUEST['id'];
-                           $sql ="SELECT detalle_id,
-                                         venta_fecha_hora, venta_total,
-                                         producto_descripcion
-                                         FROM tbl_detalle_venta 
-                                         LEFT JOIN tbl_venta ON tbl_detalle_venta.venta_id = tbl_venta.venta_id
-                                         LEFT JOIN tbl_producto ON tbl_detalle_venta.producto_id = tbl_producto.producto_id
-                                         WHERE nocuenta = $id";
+                           
+                           $sql ="SELECT V.venta_id, P.producto_descripcion,detalle_precio ,V.venta_fecha_hora 
+                                  FROM tbl_detalle_venta D 
+                                  JOIN tbl_producto P ON D.producto_id = P.producto_id
+                                  JOIN tbl_venta V ON  D.venta_id = V.venta_id
+                                  JOIN tbl_entidad E on V.entidad_id = E.entidad_id 
+                                  WHERE E.entidad_direccion = '$correo'";
+                                         
                            $query = $conn->query($sql);
                            while ($row = $query->fetch_assoc()){
                         ?>
                             <tr>
-                                <td><?php echo $row['detalle_id'];?></td>
+                                <td><?php echo $row['venta_id'];?></td>
                                 <td><?php echo $row['producto_descripcion'];?></td>
-                                <td><?php echo $row['venta_total'];?></td>
+                                <td><?php echo $row['detalle_precio'];?></td>
                                 <td><?php echo $row['venta_fecha_hora'];?></td>
                             </tr>
                         <?php
@@ -296,3 +276,8 @@ $_GET['id'];?>
         <script type="text/javascript" src="js/login.js"></script>
     </body>
 </html>
+<?php
+ }else{
+    header('Location:../login.php');
+ }
+?>

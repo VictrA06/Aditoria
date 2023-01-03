@@ -1,5 +1,6 @@
 <?php session_start();
-$_GET['id'];
+$correo = $_SESSION['correo'];
+if (isset($_SESSION['correo'])) {
 ?>
 <html>
     <head>
@@ -117,7 +118,7 @@ $_GET['id'];
                       <div class="clearFloat"></div>
                       
                       <ul class="superior-menu">
-                        <a class="navbar-brand">Reporte de Asistencias</a>  
+                        <a class="navbar-brand">Reporte de Asistencias</a> 
                              <!-- <li class="dropdown">
                                   <div class="clearFix">
                                   <span title="Estudiantes" class="floatLeft" style="cursor:default">
@@ -201,12 +202,12 @@ $_GET['id'];
                         if($conn->connect_error){
                             die("Connection failed" .$conn->connect_error);
                         }
-                           $sql ="SELECT * FROM asistencia LEFT JOIN usuarios ON asistencia.nocuenta=usuarios.nocuenta WHERE nocuenta = '$id'";
+                           $sql ="SELECT * FROM asistencia LEFT JOIN usuarios ON asistencia.nocuenta=usuarios.nocuenta WHERE correo = '$correo'";
                            $query = $conn->query($sql);
                            while ($row = $query->fetch_assoc()){
                         ?>
                             <tr>
-                                <td><?php echo $row['apellido_pat'].', '.$row['nombre'].' '.$row['tipousu'];?></td>
+                                <td><?php echo $row['apellido_pat'].' '. $row['apellido_mat'].', '.$row['nombre'].' '.$row['tipousu'];?></td>
                                 <td><?php echo $row['nocuenta'];?></td>
                                 <td><?php echo $row['entrada'];?></td>
                                 <td><?php echo $row['salida'];?></td>
@@ -291,3 +292,8 @@ $_GET['id'];
         <script type="text/javascript" src="js/login.js"></script>
     </body>
 </html>
+<?php
+ }else{
+    header('Location:../login.php');
+ }
+?>
