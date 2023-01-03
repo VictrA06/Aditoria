@@ -79,28 +79,15 @@
                 <div class="container-fluid">
 
                     <!-- Brand and toggle get grouped for better display -->
-    
                     
                   <ul class="superior-menu">
                     <a class="navbar-brand" href="index.html">Inicio</a>  
                 </ul>
 
-
                 </div>
 
-                    <!-- Nav links and other content for toggling -->
-                    <!--<div class="collapse navbar-collapse" id="itt-collapsable-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
-                                <a href="/">Iniciar Sesión</a>
-                            </li>
-                        </ul>
-                    </div>-->
                 </div>
             </nav>
-
-            
-
 
             <!-- Main page content -->
             <div class="row">
@@ -174,8 +161,6 @@
                                         }
 
                                     })
-
-
 
                                 </script>
                             
