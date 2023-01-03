@@ -28,7 +28,7 @@
 				$sql ="SELECT * FROM asistencia WHERE nocuenta='$id' AND fecha='$date' AND STATUS='0'";
 				$query=$conn->query($sql);
 				if($query->num_rows>0){
-				$sql = "UPDATE asistencia SET TIMEOUT='$time', STATUS='1' WHERE nocuenta='$nocuenta' AND fecha='$date'";
+				$sql = "UPDATE asistencia SET salida ='$time', STATUS='1' WHERE nocuenta='$nocuenta' AND fecha='$date'";
 				$query=$conn->query($sql);
 				$_SESSION['success'] = 'Salida Registrada: '.$row['apellido_pat'].' '.$row['nombre'];
 			}else{

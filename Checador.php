@@ -110,30 +110,19 @@
                             data-target="#itt-collapsable-menu">
                             <span class="fa fa-bars" />
                         </button>
-                        
-
-                        <span class="tog-sup-menu floatRight paddingTB5">
-                          <span style="font-size:14px; display:inline-block; vertical-align: middle;">Menú</span> <i class="far fa-bars"></i>
-                      </span>
-                      <div class="clearFloat"></div>
-                      
-                      <ul class="superior-menu">
-                        <a class="navbar-brand">Checar Entrada</a>  
-                            <!-- <li class="dropdown">
-                                  <div class="clearFix">
-                                  <span title="Estudiantes" class="floatLeft" style="cursor:default">
-                                      Registrar
-                                  </span>
-                                  <div class="menucollapse floatRight"><i class="fas fa-caret-down"></i></div>		</div>
-                                  <ul class="submenu white-bg">
-                                          <li><a href="registro.html" target="_blank">Registro</a></li>
-                                          <li><a href="formulario.html" target="_blank">Usuario Externo</a></li>
-                                      </ul>
-                                  </li>-->
-                          </ul>
-
-
                     </div>
+                    
+                  <div class="clearFloat"></div>
+                  
+                  <ul class="superior-menu">
+                    <a class="navbar-brand">Resgitro de Acceso</a> 
+                    <a class="navbar-brand" href="index.html">Inicio</a>
+
+                    <a><?php $correo?></a>
+                </ul>
+
+
+                </div>
 
                     <!-- Nav links and other content for toggling -->
                     <!--<div class="collapse navbar-collapse" id="itt-collapsable-menu">

@@ -117,30 +117,11 @@
                       
                       <ul class="superior-menu">
                         <a class="navbar-brand">Reporte de Asistencias</a>  
-                             <!-- <li class="dropdown">
-                                  <div class="clearFix">
-                                  <span title="Estudiantes" class="floatLeft" style="cursor:default">
-                                      Registrar
-                                  </span>
-                                  <div class="menucollapse floatRight"><i class="fas fa-caret-down"></i></div>		</div>
-                                  <ul class="submenu white-bg">
-                                          <li><a href="registro.html" target="_blank">Registro</a></li>
-                                          <li><a href="formulario.html" target="_blank">Usuario Externo</a></li>
-                                      </ul>
-                              </li> -->
                      </ul>
 
 
                     </div>
 
-                    <!-- Nav links and other content for toggling -->
-                    <!--<div class="collapse navbar-collapse" id="itt-collapsable-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
-                                <a href="/">Iniciar Sesión</a>
-                            </li>
-                        </ul>
-                    </div>-->
                 </div>
             </nav>
 
@@ -205,7 +186,7 @@
                            while ($row = $query->fetch_assoc()){
                         ?>
                             <tr>
-                                <td><?php echo $row['apellido_pat'].', '.$row['nombre'].' '.$row['tipousu'];?></td>
+                                <td><?php echo $row['apellido_pat'].' '. $row['apellido_mat'].', '.$row['nombre'].' '.$row['tipousu'];?></td>
                                 <td><?php echo $row['nocuenta'];?></td>
                                 <td><?php echo $row['entrada'];?></td>
                                 <td><?php echo $row['salida'];?></td>

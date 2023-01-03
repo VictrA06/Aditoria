@@ -113,7 +113,6 @@
                   <div class="clearFloat"></div>
                   
                   <ul class="superior-menu">
-                    <a class="navbar-brand" href="index.html">Inicio</a>
                     <a class="navbar-brand" href="../attendance.php">Reporte de Asistencias</a>
                     <a class="navbar-brand" href="../Checador.php">Lector Asistencias</a>
                     <a class="navbar-brand" href="../mostrar.php">Administrar usuarios</a>

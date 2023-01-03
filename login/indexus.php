@@ -112,7 +112,7 @@
                   <div class="clearFloat"></div>
                   
                   <ul class="superior-menu">
-                    <a class="navbar-brand" href="index.html">Inicio</a>
+                    <a class="navbar-brand" href="../index.html">Inicio</a>
                     <a class="navbar-brand" href="../attendance2.php">Reporte de Asistencias</a>
                     <a class="navbar-brand" href="../repagos.php">Reporte de Pagos</a>
                     <a class="navbar-brand" href="salir.php">Cerrar Sesión</a>
