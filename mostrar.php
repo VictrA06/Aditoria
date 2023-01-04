@@ -120,7 +120,7 @@
                     <td><img height="80px"src="data:image/png;base64,<?php echo base64_encode ($row['imagen']);?>"/></td>
                     <th><a href="procesos/editar.php?id= <?php echo $row['nocuenta'];?>">Editar</a></th>
                     <th><a href="procesos/proceso_eliminar.php?id=<?php echo $row['nocuenta'];?>">Eliminar</a></th>
-                    <th><a href="procesos/credencial.php?id=<?php echo $row['nocuenta'];?>">Credencial</a></th>
+                    <th><a href="procesos/credencial.php?id=<?php echo $row['nocuenta']; ?>">Credencial</a></th>
                 </tr>
             <?php
                 }
@@ -129,11 +129,6 @@
         </tbody>
     </table>
 </center>
-
-
-
-
-
             <!-- Page footer -->
             <footer class="text-center">
                 <div >

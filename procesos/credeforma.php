@@ -10,7 +10,7 @@
 					$plantilla .= ' 
 						<div class="delantera">
 							<div class="logo-escuela">
-								<img src="'.$dato['imagen'].'"  alt="">
+								<img src="imgcr/foto.png"  alt="">
 							</div>				
 							<div class="grupo" id="numero">
 								<p class="label">No. Control</p>

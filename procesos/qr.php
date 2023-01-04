@@ -30,13 +30,9 @@
             $tamanio = 7;
             $level = "M";
             $frameSize = 3;
-    
             
-    
             $contenido = $row['nocuenta'] ;
             QRcode :: png($contenido, $filename,$level,$tamanio,$frameSize);
-
-            
         
         }else{
     

@@ -1,3 +1,6 @@
+<?php
+    $id = $_REQUEST['id'];  
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -40,45 +43,17 @@
 
         <link rel="icon" href="../img/ITTLogo.png">
     </head>
+    
     <body onload="configure();">
         
-
 
 <div class="container" align="center">
     <img src="../banners/header.png" class="img-responsive" alt="Responsive image">  
 </div> 
 
         <div class="container">
-           
-
-            <!-- Navigation bar -->
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-
-                    <!-- Brand and toggle get grouped for better display -->
-    
-                    
-                  <ul class="superior-menu">
-                    <a class="navbar-brand" href="index.html">Inicio</a>  
-                </ul>
-
-
-                </div>
-
-                    <!-- Nav links and other content for toggling -->
-                    <!--<div class="collapse navbar-collapse" id="itt-collapsable-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
-                                <a href="/">Iniciar Sesión</a>
-                            </li>
-                        </ul>
-                    </div>-->
-                </div>
-            </nav>
 
             
-
-
             <!-- Main page content -->
             <div class="row">
                 <div class="col-sm-offset-4 col-sm-4">
@@ -89,10 +64,6 @@
                         <div class="panel-body">
                             <form action="" method="POST" enctype="multipart/form-data">
 
-                                <div class="form-group">
-                                    <label for="">No.Cuenta</label>
-                                    <input type="numeric" class="form-control" name="id" required pattern="[0-9]{8,8}" maxlength="8" title="El numero de cuenta no tiene que ser menor a 8 digitos"/>
-                                </div>
                                 <label for="">Fotografía</label>
                                 <div class="contcam">
                                     <div id="camara">
@@ -102,7 +73,7 @@
 
                                     </div>
                                     <br>
-                                    <button type="submit" onclick = "guardarCaptura();"  class="btn btn-primary pull-left">Tomar Foto</button>
+                                    <button type="submite" onclick = "guardarCaptura();" class="btn btn-primary pull-left">Tomar Foto </button>   
                                 </div>
                             </form>
                         </div>
@@ -110,19 +81,20 @@
                 </div>
             </div>
 
-
             <!-- Script-->
+
         <script type="text/javascript" src="../assets/webcam.min.js"></script>
         <script type="text/javascript">
             function configure(){
                 Webcam.set({
-                    width:378,
-                    height:380,
+                    width:380,
+                    height:378,
                     image_format: 'jpeg',
                     jpeg_quality:90
                 });
 
                 Webcam.attach('#camara');
+                
             }
 
             function guardarCaptura() {
@@ -130,7 +102,6 @@
                 Webcam.snap(function(data_uri){
                     document.getElementById('results').innerHTML=
                     '<img id="webcam" src = "'+data_uri+'">';
-
                 });
 
                 Webcam.reset();
@@ -138,12 +109,11 @@
                 var base64image = document.getElementById("webcam").src;
 
                 Webcam.upload(base64image, 'function.php', function(code,text){
+                    
                     alert('Se ha guardado la imagen');
-
                 });
-                
             }
-            
+ 
         </script>
 
             <!-- Page footer -->
@@ -167,6 +137,8 @@
                 </div>
             </footer>
         </div>
-
+ 
     </body>
+
+    
 </html>

@@ -2,13 +2,14 @@
 
 $id = $_REQUEST['id'];
 
-require_once ('../vendor/autoload.php');
 
-include('fotocredencial.php');
+require_once ('../vendor/autoload.php');
 
 include('qr.php');
 
 require_once ('credeforma.php');
+
+
 
 $css = file_get_contents('../css/estilos.css');
 
